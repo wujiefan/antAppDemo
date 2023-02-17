@@ -1,0 +1,31 @@
+.demo {
+  position: relative;
+  width: 1200px;
+  min-width: 1200px;
+  margin: 0 auto;
+
+  .prev,
+  .next {
+    position: absolute;
+    top: 72px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .prev {
+    left: -70px;
+  }
+
+  .next {
+    right: -70px;
+  }
+
+  .item {
+    width: 162px;
+    margin: 50px 0;
+    box-shadow: 3px 6px 8px #dde0e8;
+  }
+}

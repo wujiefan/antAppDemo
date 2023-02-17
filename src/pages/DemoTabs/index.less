@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  justify-content: center;
+  background: #eee;
+  .box {
+    width: 375px;
+    height: 640px;
+    border: 2px solid #333;
+    .scroll {
+      display: flex;
+      width: 100%;
+      overflow: auto;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .tabs {
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: space-around;
+        height: 40px;
+        background: yellow;
+        .item {
+          display: flex;
+          flex: 0 0 auto;
+          align-items: center;
+          justify-content: center;
+          width: 100px;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

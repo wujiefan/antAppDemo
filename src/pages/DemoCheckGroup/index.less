@@ -1,0 +1,27 @@
+.xkd(@n, @i: 2) when (@i =< @n) {
+  .level@{i} {
+    margin-left: (10 * @i)+0px;
+  }
+  .xkd(@n, (@i + 1));
+}
+
+.xkd(5);
+
+.cardlist {
+  display: flex;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background-color: #eee;
+  border-radius: 4px;
+}
+.hide {
+  display: none;
+}
+// :global(.ant-checkbox-wrapper) {
+//   align-items: center;
+// }
